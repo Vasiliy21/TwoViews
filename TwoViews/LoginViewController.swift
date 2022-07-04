@@ -9,11 +9,30 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet var userNameTF: UITextField!
+    @IBOutlet var passwordTF: UITextField!
+
+    var userName: String!
+    var password: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
     }
+
+    @IBAction func logInButtonPressed() {
+        if userName != "User" && passwordTF.text != "Password" {
+            showAllertForWrongIssues(with: "Invalid login or password", and: "Please, enter correct login and password")
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeView = segue.destination as? WelcomeViewController else { return }
+        welcomeView.welcome = userNameTF.text
+    }
+
+    // MARK: - ForgotAlertControllers
     @IBAction func showAlertForgotName() {
         showAllert(with: "Oops!", and: "Your name is User 😉")
     }
@@ -33,4 +52,14 @@ class LoginViewController: UIViewController {
             present(alert, animated: true)
         }
     }
+extension LoginViewController {
+    private func showAllertForWrongIssues(with title: String, and message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.passwordTF.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 
+}

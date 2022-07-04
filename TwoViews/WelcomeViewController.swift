@@ -9,11 +9,18 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet var welcomeMessage: UILabel!
+
+    var welcome: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        welcomeMessage.text = "Welcome, \(welcome ?? "")!"
     }
     
+    @IBAction func logOut() {
+        dismiss(animated: true)
+    }
+
 
 }
