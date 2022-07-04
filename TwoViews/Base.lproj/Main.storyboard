@@ -61,12 +61,14 @@
                         <color key="backgroundColor" red="0.95993916971700177" green="0.93758547055971375" blue="0.91384102790136568" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QiL-nZ-l0v" secondAttribute="trailing" constant="71" id="ABI-dz-mcO"/>
+                            <constraint firstItem="bv6-1O-Caq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fnf-cp-vxM"/>
                             <constraint firstItem="QiL-nZ-l0v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="GmN-56-FLv"/>
                             <constraint firstItem="i9s-Rd-jsD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uxf-cC-AHv"/>
                             <constraint firstItem="6bm-34-gJY" firstAttribute="top" secondItem="bv6-1O-Caq" secondAttribute="bottom" constant="36" id="V78-X2-chE"/>
                             <constraint firstItem="bv6-1O-Caq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="ZQO-HG-tW2"/>
                             <constraint firstItem="i9s-Rd-jsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOz-qf-YMf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9s-Rd-jsD" secondAttribute="trailing" constant="16" id="kl1-HS-U9x"/>
+                            <constraint firstItem="QiL-nZ-l0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mus-gO-5cL"/>
                             <constraint firstItem="bv6-1O-Caq" firstAttribute="top" secondItem="QiL-nZ-l0v" secondAttribute="bottom" constant="17" id="oNu-tS-mfS"/>
                             <constraint firstItem="QiL-nZ-l0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="ojZ-Pb-ewk"/>
                             <constraint firstItem="i9s-Rd-jsD" firstAttribute="top" secondItem="6bm-34-gJY" secondAttribute="bottom" constant="30" id="r6X-Z6-vub"/>
