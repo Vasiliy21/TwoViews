@@ -20,6 +20,7 @@ class WelcomeViewController: UIViewController {
     
     @IBAction func logOut() {
         dismiss(animated: true)
+        
     }
 
 

@@ -32,6 +32,10 @@ class LoginViewController: UIViewController {
         welcomeView.welcome = userNameTF.text
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+    }
+
     // MARK: - ForgotAlertControllers
     @IBAction func showAlertForgotName() {
         showAllert(with: "Oops!", and: "Your name is User 😉")

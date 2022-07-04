@@ -54,7 +54,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiL-nZ-l0v">
                                 <rect key="frame" x="71" y="240" width="272" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,8 +76,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="password" destination="bv6-1O-Caq" id="T7P-Cn-6K8"/>
-                        <outlet property="userName" destination="QiL-nZ-l0v" id="T6B-u8-NNR"/>
+                        <outlet property="passwordTF" destination="bv6-1O-Caq" id="OeG-uC-C0W"/>
+                        <outlet property="userNameTF" destination="QiL-nZ-l0v" id="azd-Xh-zHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
