@@ -21,9 +21,4 @@ class WelcomeViewController: UIViewController {
     @IBAction func logOut() {
         dismiss(animated: true)
         }
-    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
-        guard let loginView = unwindSegue.destination as? LoginViewController else { return }
-        loginView.userName = ""
-        loginView.password = ""
-    }
     }

@@ -17,8 +17,8 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
+        userNameTF.text = userName
+        passwordTF.text = password
     }
 
     @IBAction func logInButtonPressed() {
@@ -34,6 +34,12 @@ class LoginViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
+    }
+
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard segue.source is WelcomeViewController else { return }
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
 
     // MARK: - ForgotAlertControllers
